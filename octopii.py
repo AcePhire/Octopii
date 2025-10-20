@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-output_file = "output.json"
+output_file = "/pii/output.json"
 notifyURL = ""
 
 import json, textract, sys, urllib, cv2, os, json, shutil, traceback
