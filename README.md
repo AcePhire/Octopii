@@ -26,7 +26,7 @@ PII leaks are often overlooked in the cybersecurity space. At RedHunt Labs, we a
 
 This is why we created Octopii, a tool to demonstrate and detect how easy it is to automate the discovery and extraction of leaked PII and sensitive documents on the Internet.
 
-## Usage
+## Docker Usage
 ### Docker Build
 To build the Octopii image, type
 ```
@@ -38,10 +38,10 @@ Once the image is built, you can run it
 To run the image that was built previously, type the following command in the directory you want to scan
 
 ```
-docker run -v ./:pii octopii:latest
+docker run -v ./:/pii octopii:latest
 ```
 
-
+## Local Usage
 ### Installing dependencies
 1. Install all dependencies via `pip install -r requirements.txt`.
 2. Install the Tesseract helper locally via `sudo apt install tesseract-ocr -y` on Ubuntu or `sudo pacman -Syu tesseract` on Arch Linux.
